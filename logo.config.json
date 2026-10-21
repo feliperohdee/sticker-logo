@@ -1,0 +1,29 @@
+{
+	"name": "embed-editor",
+	"font": { "fontsource": "inter", "weight": 900 },
+	"style": {
+		"size": 190,
+		"tracking": -9,
+		"wordSpacing": 30,
+		"lineHeight": 158,
+		"indent": 60,
+		"outline": 26,
+		"extrusion": { "depth": 30, "direction": "down-left", "step": 1.5 },
+		"fillGaps": true
+	},
+	"themes": {
+		"lime": { "background": "#A3E635", "ink": "#09090B", "fill": "#FFFFFF" },
+		"black": { "background": "#000000", "ink": "#A3E635", "fill": "#000000" },
+		"white": { "background": "#FFFFFF", "ink": "#09090B", "fill": "#A3E635" }
+	},
+	"logos": [
+		{ "name": "stacked", "lines": ["embed", "editor"], "square": true, "padding": 150 },
+		{ "name": "inline", "lines": ["embed editor"] },
+		{
+			"name": "navbar",
+			"lines": ["embed editor"],
+			"style": { "outline": 18, "extrusion": { "depth": 16 } }
+		}
+	],
+	"output": { "dir": "out", "background": true, "transparent": true, "padding": 70, "png": [] }
+}
