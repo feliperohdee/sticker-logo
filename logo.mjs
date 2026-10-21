@@ -167,17 +167,18 @@ const layout = (logo, font, s) => {
 	return { letters, ink };
 };
 
+// the extrusion's step per unit of depth: a named direction moves 1 on each axis it names, so `depth` is how far the
+// sticker drops on each axis (down-left 30 = 30 left and 30 down); a [dx, dy] is scaled so its larger axis moves 1
 const direction = d => {
 	if (Array.isArray(d)) {
-		const len = Math.hypot(d[0], d[1]) || 1;
-		return [d[0] / len, d[1] / len];
+		const m = Math.max(Math.abs(d[0]), Math.abs(d[1])) || 1;
+		return [d[0] / m, d[1] / m];
 	}
 	const v = DIRECTIONS[d];
 	if (!v) {
 		fail(`extrusion.direction must be one of ${Object.keys(DIRECTIONS).join(', ')} or [dx, dy], got ${JSON.stringify(d)}`);
 	}
-	const len = Math.hypot(v[0], v[1]);
-	return [v[0] / len, v[1] / len];
+	return v;
 };
 
 const n = v => +v.toFixed(1);

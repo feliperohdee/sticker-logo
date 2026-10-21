@@ -78,7 +78,7 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
 - **A logo overrides anything:** its own `style` or `font` merges over the config's, as the `navbar` logo does for a lighter outline at small sizes.
 - **Alignment:** `align` places stacked lines: `left` starts every line on the same edge, `center` and `right` line them up on the widest one, `stagger` moves each line `indent` further right.
 - **Lines:** a line is a string, or `{ "text": "editor", "x": 60, "y": 158 }` to place it by hand. A line's own `x` wins over `align`; without `y`, line `i` sits at `i × lineHeight`.
-- **Extrusion direction:** `down-left`, `down-right`, `up-left`, `up-right`, `down`, `up`, `left`, `right`, or `[dx, dy]`.
+- **Extrusion:** `depth` is how far the sticker drops on each axis it moves along: `down-left` with `depth: 30` is 30 left and 30 down. `direction` is `down-left`, `down-right`, `up-left`, `up-right`, `down`, `up`, `left`, `right`, or `[dx, dy]` (scaled so its larger axis moves `depth`).
 - **Outputs:** `background` writes the file with its backdrop, padded by `padding` (square when the logo says `square`). `transparent` writes it without a backdrop, cropped tight. `png` lists the widths to render.
 - **Fonts:**
   - `{ "fontsource": "<name>", "weight": 900 }` takes any [Fontsource](https://fontsource.org) family. Install it first with `yarn add @fontsource/<name>`. The weight must exist for that family.
