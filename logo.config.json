@@ -6,6 +6,7 @@
 		"tracking": -9,
 		"wordSpacing": 30,
 		"lineHeight": 158,
+		"align": "stagger",
 		"indent": 60,
 		"outline": 26,
 		"extrusion": { "depth": 30, "direction": "down-left", "step": 1.5 },
@@ -18,6 +19,7 @@
 	},
 	"logos": [
 		{ "name": "stacked", "lines": ["embed", "editor"], "square": true, "padding": 150 },
+		{ "name": "stacked-left", "lines": ["embed", "editor"], "square": true, "padding": 150, "style": { "align": "left" } },
 		{ "name": "inline", "lines": ["embed editor"] },
 		{
 			"name": "navbar",

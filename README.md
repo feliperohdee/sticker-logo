@@ -18,6 +18,7 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
 | `-t, --text <text>`   | Quick mode: an `inline` logo of the text and a `stacked` one, one word per line. Uses the config's font, style and themes when there is one. |
 | `-l, --logo <names>`  | Only these logos, comma separated: `--logo inline,navbar`.                                                                                   |
 | `--theme <names>`     | Only these themes, comma separated.                                                                                                          |
+| `-a, --align <align>` | Line alignment for every logo: `left`, `center`, `right` or `stagger`.                                                                       |
 | `-o, --out <dir>`     | Output folder.                                                                                                                               |
 | `--png <sizes>`       | Also PNGs at these widths: `--png 512,1024`.                                                                                                 |
 | `--list`              | Print the logos and themes in the config, write nothing.                                                                                     |
@@ -33,7 +34,8 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
     "tracking": -9, // space between letters (negative pulls them together)
     "wordSpacing": 30, // space between words on a line
     "lineHeight": 158, // baseline to baseline, stacked lines
-    "indent": 60, // each stacked line starts this much further right
+    "align": "stagger", // left, center, right, or stagger (each line i × indent further right)
+    "indent": 60, // the stagger step
     "outline": 26, // outline width
     "extrusion": { "depth": 30, "direction": "down-left", "step": 1.5 },
     "fillGaps": true // solid ink between stacked lines: no background shows through
@@ -47,6 +49,13 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
       "lines": ["embed", "editor"],
       "square": true,
       "padding": 150
+    },
+    {
+      "name": "stacked-left",
+      "lines": ["embed", "editor"],
+      "square": true,
+      "padding": 150,
+      "style": { "align": "left" }
     },
     { "name": "inline", "lines": ["embed editor"] },
     {
@@ -67,7 +76,8 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
 
 - **Theme colours:** `ink` paints the outline and the extrusion, `fill` the letters, `background` the backdrop of the non-transparent files.
 - **A logo overrides anything:** its own `style` or `font` merges over the config's, as the `navbar` logo does for a lighter outline at small sizes.
-- **Lines:** a line is a string, or `{ "text": "editor", "x": 60, "y": 158 }` to place it by hand. Without `x` and `y`, line `i` sits at `i × indent`, `i × lineHeight`.
+- **Alignment:** `align` places stacked lines: `left` starts every line on the same edge, `center` and `right` line them up on the widest one, `stagger` moves each line `indent` further right.
+- **Lines:** a line is a string, or `{ "text": "editor", "x": 60, "y": 158 }` to place it by hand. A line's own `x` wins over `align`; without `y`, line `i` sits at `i × lineHeight`.
 - **Extrusion direction:** `down-left`, `down-right`, `up-left`, `up-right`, `down`, `up`, `left`, `right`, or `[dx, dy]`.
 - **Outputs:** `background` writes the file with its backdrop, padded by `padding` (square when the logo says `square`). `transparent` writes it without a backdrop, cropped tight. `png` lists the widths to render.
 - **Fonts:**
@@ -77,6 +87,7 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
 ## Recipes
 
 - **A bolder sticker:** raise `outline` (30 to 34) and `extrusion.depth` (40 to 50).
+- **Left-aligned like a sign:** set `"align": "left"`, or try it once with `node logo.mjs --align left`.
 - **Tighter lines:** lower `lineHeight` until the second line's ascenders touch the first line's outline, around `0.8 × size` for Inter.
 - **A favicon or app icon:** add a logo with one short line (`["ee"]`), `"square": true`, and render `--png 512`.
 - **Another brand:** copy `logo.config.json`, change `name`, `font`, `themes` and `logos`, then run `node logo.mjs -c that.json`.

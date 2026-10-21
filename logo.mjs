@@ -17,6 +17,7 @@ Options:
   -t, --text <text>     quick mode: one inline logo of this text, plus a stacked one (one word per line)
   -l, --logo <names>    only these logos, comma separated
       --theme <names>   only these themes, comma separated
+  -a, --align <align>   line alignment for every logo: left, center, right or stagger (overrides style.align)
   -o, --out <dir>       output folder (overrides output.dir)
       --png <sizes>     also write PNGs at these widths, comma separated (needs @resvg/resvg-js)
       --list            print the logos and themes in the config, write nothing
@@ -33,6 +34,7 @@ const DEFAULTS = {
 		tracking: -9,
 		wordSpacing: 30,
 		lineHeight: 158,
+		align: 'stagger',
 		indent: 60,
 		outline: 26,
 		extrusion: { depth: 30, direction: 'down-left', step: 1.5 },
@@ -134,10 +136,20 @@ const rect = (x1, y1, x2, y2) => {
 };
 
 // a logo's letters, and the ink under them: the letters plus, between stacked lines, a band so no background shows there
+const ALIGNS = ['left', 'center', 'right', 'stagger'];
+
+// lines are first set at x 0 to measure them, then placed by `align`: flush left, centred, flush right, or staggered
+// (line i starts i × indent further right). A line's own `x` wins over the alignment.
 const layout = (logo, font, s) => {
-	const lines = logo.lines.map((line, i) => {
-		const l = typeof line === 'string' ? { text: line } : line;
-		return setLine(font, l.text, l.x ?? i * s.indent, l.y ?? i * s.lineHeight, s);
+	if (!ALIGNS.includes(s.align)) {
+		fail(`style.align must be one of ${ALIGNS.join(', ')}, got ${JSON.stringify(s.align)}`);
+	}
+	const specs = logo.lines.map(line => (typeof line === 'string' ? { text: line } : line));
+	const widths = specs.map(l => setLine(font, l.text, 0, 0, s).end);
+	const widest = Math.max(...widths);
+	const lines = specs.map((l, i) => {
+		const x = { left: 0, center: (widest - widths[i]) / 2, right: widest - widths[i], stagger: i * s.indent }[s.align];
+		return setLine(font, l.text, l.x ?? x, l.y ?? i * s.lineHeight, s);
 	});
 	const letters = new opentype.Path();
 	lines.forEach(l => letters.extend(l.path));
@@ -226,6 +238,7 @@ const main = async () => {
 			text: { type: 'string', short: 't' },
 			logo: { type: 'string', short: 'l' },
 			theme: { type: 'string' },
+			align: { type: 'string', short: 'a' },
 			out: { type: 'string', short: 'o' },
 			png: { type: 'string' },
 			list: { type: 'boolean' },
@@ -258,6 +271,10 @@ const main = async () => {
 		const words = opt.text.trim().split(/\s+/);
 		cfg.name = words.join('-').toLowerCase().replace(/[^a-z0-9-]/g, '') || 'logo';
 		cfg.logos = [{ name: 'inline', lines: [opt.text] }, ...(words.length > 1 ? [{ name: 'stacked', lines: words, square: true }] : [])];
+	}
+	if (opt.align) {
+		cfg.style.align = opt.align;
+		cfg.logos = cfg.logos.map(l => (l.style?.align ? { ...l, style: { ...l.style, align: opt.align } } : l));
 	}
 	check(cfg, file);
 
