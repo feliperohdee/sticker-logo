@@ -13,9 +13,10 @@
 		"fillGaps": true
 	},
 	"themes": {
-		"lime": { "background": "#A3E635", "ink": "#09090B", "fill": "#FFFFFF" },
-		"black": { "background": "#000000", "ink": "#A3E635", "fill": "#000000" },
-		"white": { "background": "#FFFFFF", "ink": "#09090B", "fill": "#A3E635" }
+		"white-black": { "background": "#A3E635", "ink": "#09090B", "fill": "#FFFFFF" },
+		"black-lime": { "background": "#000000", "ink": "#A3E635", "fill": "#000000" },
+		"lime-black": { "background": "#FFFFFF", "ink": "#09090B", "fill": "#A3E635" },
+		"black-white": { "background": "#000000", "ink": "#FFFFFF", "fill": "#000000" }
 	},
 	"logos": [
 		{ "name": "stacked", "lines": ["embed", "editor"], "square": true, "padding": 150 },

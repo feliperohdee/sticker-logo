@@ -2,170 +2,226 @@
 	"name": "embed-editor",
 	"files": [
 		{
-			"file": "embed-editor-stacked-lime.svg",
+			"file": "embed-editor-stacked-white-black.svg",
 			"logo": "stacked",
-			"theme": "lime",
+			"theme": "white-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-lime-transparent.svg",
+			"file": "embed-editor-stacked-white-black-transparent.svg",
 			"logo": "stacked",
-			"theme": "lime",
+			"theme": "white-black",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-black.svg",
+			"file": "embed-editor-stacked-black-lime.svg",
 			"logo": "stacked",
-			"theme": "black",
+			"theme": "black-lime",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-black-transparent.svg",
+			"file": "embed-editor-stacked-black-lime-transparent.svg",
 			"logo": "stacked",
-			"theme": "black",
+			"theme": "black-lime",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-white.svg",
+			"file": "embed-editor-stacked-lime-black.svg",
 			"logo": "stacked",
-			"theme": "white",
+			"theme": "lime-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-white-transparent.svg",
+			"file": "embed-editor-stacked-lime-black-transparent.svg",
 			"logo": "stacked",
-			"theme": "white",
+			"theme": "lime-black",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-left-lime.svg",
+			"file": "embed-editor-stacked-black-white.svg",
+			"logo": "stacked",
+			"theme": "black-white",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-black-white-transparent.svg",
+			"logo": "stacked",
+			"theme": "black-white",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-white-black.svg",
 			"logo": "stacked-left",
-			"theme": "lime",
+			"theme": "white-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-left-lime-transparent.svg",
+			"file": "embed-editor-stacked-left-white-black-transparent.svg",
 			"logo": "stacked-left",
-			"theme": "lime",
+			"theme": "white-black",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-left-black.svg",
+			"file": "embed-editor-stacked-left-black-lime.svg",
 			"logo": "stacked-left",
-			"theme": "black",
+			"theme": "black-lime",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-left-black-transparent.svg",
+			"file": "embed-editor-stacked-left-black-lime-transparent.svg",
 			"logo": "stacked-left",
-			"theme": "black",
+			"theme": "black-lime",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-left-white.svg",
+			"file": "embed-editor-stacked-left-lime-black.svg",
 			"logo": "stacked-left",
-			"theme": "white",
+			"theme": "lime-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-stacked-left-white-transparent.svg",
+			"file": "embed-editor-stacked-left-lime-black-transparent.svg",
 			"logo": "stacked-left",
-			"theme": "white",
+			"theme": "lime-black",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-inline-lime.svg",
-			"logo": "inline",
-			"theme": "lime",
+			"file": "embed-editor-stacked-left-black-white.svg",
+			"logo": "stacked-left",
+			"theme": "black-white",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-inline-lime-transparent.svg",
-			"logo": "inline",
-			"theme": "lime",
+			"file": "embed-editor-stacked-left-black-white-transparent.svg",
+			"logo": "stacked-left",
+			"theme": "black-white",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-inline-black.svg",
+			"file": "embed-editor-inline-white-black.svg",
 			"logo": "inline",
-			"theme": "black",
+			"theme": "white-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-inline-black-transparent.svg",
+			"file": "embed-editor-inline-white-black-transparent.svg",
 			"logo": "inline",
-			"theme": "black",
+			"theme": "white-black",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-inline-white.svg",
+			"file": "embed-editor-inline-black-lime.svg",
 			"logo": "inline",
-			"theme": "white",
+			"theme": "black-lime",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-inline-white-transparent.svg",
+			"file": "embed-editor-inline-black-lime-transparent.svg",
 			"logo": "inline",
-			"theme": "white",
+			"theme": "black-lime",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-navbar-lime.svg",
-			"logo": "navbar",
-			"theme": "lime",
+			"file": "embed-editor-inline-lime-black.svg",
+			"logo": "inline",
+			"theme": "lime-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-navbar-lime-transparent.svg",
-			"logo": "navbar",
-			"theme": "lime",
+			"file": "embed-editor-inline-lime-black-transparent.svg",
+			"logo": "inline",
+			"theme": "lime-black",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-navbar-black.svg",
-			"logo": "navbar",
-			"theme": "black",
+			"file": "embed-editor-inline-black-white.svg",
+			"logo": "inline",
+			"theme": "black-white",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-navbar-black-transparent.svg",
-			"logo": "navbar",
-			"theme": "black",
+			"file": "embed-editor-inline-black-white-transparent.svg",
+			"logo": "inline",
+			"theme": "black-white",
 			"background": false,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-navbar-white.svg",
+			"file": "embed-editor-navbar-white-black.svg",
 			"logo": "navbar",
-			"theme": "white",
+			"theme": "white-black",
 			"background": true,
 			"format": "svg"
 		},
 		{
-			"file": "embed-editor-navbar-white-transparent.svg",
+			"file": "embed-editor-navbar-white-black-transparent.svg",
 			"logo": "navbar",
-			"theme": "white",
+			"theme": "white-black",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-black-lime.svg",
+			"logo": "navbar",
+			"theme": "black-lime",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-black-lime-transparent.svg",
+			"logo": "navbar",
+			"theme": "black-lime",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-lime-black.svg",
+			"logo": "navbar",
+			"theme": "lime-black",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-lime-black-transparent.svg",
+			"logo": "navbar",
+			"theme": "lime-black",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-black-white.svg",
+			"logo": "navbar",
+			"theme": "black-white",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-black-white-transparent.svg",
+			"logo": "navbar",
+			"theme": "black-white",
 			"background": false,
 			"format": "svg"
 		}

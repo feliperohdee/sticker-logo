@@ -41,7 +41,12 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
     "fillGaps": true // solid ink between stacked lines: no background shows through
   },
   "themes": {
-    "lime": { "background": "#A3E635", "ink": "#09090B", "fill": "#FFFFFF" }
+    // white letters, black outline, on lime
+    "white-black": {
+      "background": "#A3E635",
+      "ink": "#09090B",
+      "fill": "#FFFFFF"
+    }
   },
   "logos": [
     {
@@ -75,6 +80,7 @@ Open `out/preview.html` to see them all. `out/manifest.json` lists every file wr
 ```
 
 - **Theme colours:** `ink` paints the outline and the extrusion, `fill` the letters, `background` the backdrop of the non-transparent files.
+- **Theme names:** name a theme after what you see, letters then outline (`white-black`), not after its background: the `-transparent` files drop the background but keep the name.
 - **A logo overrides anything:** its own `style` or `font` merges over the config's, as the `navbar` logo does for a lighter outline at small sizes.
 - **Alignment:** `align` places stacked lines: `left` starts every line on the same edge, `center` and `right` line them up on the widest one, `stagger` moves each line `indent` further right.
 - **Lines:** a line is a string, or `{ "text": "editor", "x": 60, "y": 158 }` to place it by hand. A line's own `x` wins over `align`; without `y`, line `i` sits at `i × lineHeight`.
