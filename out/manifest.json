@@ -1,0 +1,173 @@
+{
+	"name": "embed-editor",
+	"files": [
+		{
+			"file": "embed-editor-stacked-lime.svg",
+			"logo": "stacked",
+			"theme": "lime",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-lime-transparent.svg",
+			"logo": "stacked",
+			"theme": "lime",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-black.svg",
+			"logo": "stacked",
+			"theme": "black",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-black-transparent.svg",
+			"logo": "stacked",
+			"theme": "black",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-white.svg",
+			"logo": "stacked",
+			"theme": "white",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-white-transparent.svg",
+			"logo": "stacked",
+			"theme": "white",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-lime.svg",
+			"logo": "stacked-left",
+			"theme": "lime",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-lime-transparent.svg",
+			"logo": "stacked-left",
+			"theme": "lime",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-black.svg",
+			"logo": "stacked-left",
+			"theme": "black",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-black-transparent.svg",
+			"logo": "stacked-left",
+			"theme": "black",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-white.svg",
+			"logo": "stacked-left",
+			"theme": "white",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-stacked-left-white-transparent.svg",
+			"logo": "stacked-left",
+			"theme": "white",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-inline-lime.svg",
+			"logo": "inline",
+			"theme": "lime",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-inline-lime-transparent.svg",
+			"logo": "inline",
+			"theme": "lime",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-inline-black.svg",
+			"logo": "inline",
+			"theme": "black",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-inline-black-transparent.svg",
+			"logo": "inline",
+			"theme": "black",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-inline-white.svg",
+			"logo": "inline",
+			"theme": "white",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-inline-white-transparent.svg",
+			"logo": "inline",
+			"theme": "white",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-lime.svg",
+			"logo": "navbar",
+			"theme": "lime",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-lime-transparent.svg",
+			"logo": "navbar",
+			"theme": "lime",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-black.svg",
+			"logo": "navbar",
+			"theme": "black",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-black-transparent.svg",
+			"logo": "navbar",
+			"theme": "black",
+			"background": false,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-white.svg",
+			"logo": "navbar",
+			"theme": "white",
+			"background": true,
+			"format": "svg"
+		},
+		{
+			"file": "embed-editor-navbar-white-transparent.svg",
+			"logo": "navbar",
+			"theme": "white",
+			"background": false,
+			"format": "svg"
+		}
+	]
+}
